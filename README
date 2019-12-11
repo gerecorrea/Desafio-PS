@@ -1,0 +1,24 @@
+Explicação e sequência de pessoas para executar a aplicação
+
+Desenvolvido por Geremias Corrêa
+
+A aplicação foi desenvolvida em Java e utiliza ligação com banco de dados (PostgreSQL).
+
+------------------------------------------------------------------------------------
+
+Para utilizar o banco, escolha uma plataforma de preferência para utilizar o banco PostgreSQl. No meu caso, utilizei a plataforma PgAdmin 4
+Neste deve ser feito o query do "scriptPostgre.txt" dispobibilizado. Basta abrí-lo e dar ctrl c + ctrl v na ferramenta query tool ou similar da plataforma. Esse script na verdade é bem simples e tem simplesmente a criação da database com a entidade "pessoa", na qual tem as variáveis codigo, nome, idade e e-mail.
+
+Utilize uma plataforma em Java para execução da aplicação. No meu caso, utilizei o NetBeans 8.2
+
+------------------------------------------------------------------------------------
+
+Ao abrir a plataforma para o Java, importe o arquivo do tipo .zip nomeado como "pontoSistemasGeremias.zip".
+Após isso, inclua na pasta "Biblioteca" do diretório gerado o executável "postgresql-42.2.2.jre7". Caso seja pelo NetBeans, basta clicar com o botar direito sobre o pacote "Bibliotecas", então clicar em "Adicionar JAR/Pasta...", selecionando o arquivo alvo disponibilizado.
+Importe a pasta em .zip com o nome pontoSistemas.zip para a plataforma escolhida.
+
+Na conexão com o banco de dados, utilizei a porta 5432, que é do servidor do postgreSQL da Udesc, seu usuário é "postgres" e sua senha é "udesc". Caso seja desejado acessar em outra conexão, mudar os valores de conexão de porta e afins em Conexao.java, que fica no DAO. 
+
+Caso esteja tudo de acordo, basta executar a aplicação.
+
+------------------------------------------------------------------------------------

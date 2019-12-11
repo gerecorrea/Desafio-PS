@@ -1,0 +1,19 @@
+-- Database: pontoSistemas
+
+-- DROP DATABASE pontoSistemas;
+
+CREATE DATABASE pontoSistemas
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE pessoa(
+	codigo int primary key,
+	nome varchar(50),
+	idade int,
+	email varchar(50)
+)
